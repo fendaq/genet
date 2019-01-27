@@ -62,7 +62,7 @@ impl Reader for PcapFileReader {
 }
 
 #[derive(Default, Package)]
-struct DefaultPackage {
+pub struct DefaultPackage {
     #[reader(
         id = "app.genet.reader.pcap-file",
         filter(name = "Pcap File", ext = "pcap")

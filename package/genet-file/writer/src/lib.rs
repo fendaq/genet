@@ -29,7 +29,7 @@ impl Writer for GenetFileWriter {
 }
 
 #[derive(Default, Package)]
-struct DefaultPackage {
+pub struct DefaultPackage {
     #[writer(
         id = "app.genet.writer.genet-file",
         filter(name = "genet", ext = "genet")
